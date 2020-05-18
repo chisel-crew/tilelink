@@ -23,7 +23,6 @@ lazy val chiselDeps = libraryDependencies ++= Seq(
   "edu.berkeley.cs" %% "firrtl"  % Version.firrtl
 )
 
-
 lazy val root = (project in file("."))
   .settings(
     organization := "Neurodyne",
@@ -32,7 +31,7 @@ lazy val root = (project in file("."))
     scalaVersion := "2.12.10",
     maxErrors := 3,
     commonSettings,
-    chiselDeps,
+    chiselDeps
   )
 
 // Aliases
